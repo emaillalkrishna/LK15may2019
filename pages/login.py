@@ -44,11 +44,10 @@
 # # #  1. self.un_by_name = "j_username"
 # # #  2. self.pw_by_name = "j_password"
 # # #  3. self.signinbutton_by_name = "Submit"
-
+#
 # class LoginPage:
 #     def __init__(self, driver):
 #         self.driver = driver
-#
 #         self.un_by_name = "j_username"
 #         self.pw_by_name = "j_password"
 #         self.signinbutton_by_name = "Submit"
@@ -108,7 +107,6 @@
 #
 #     def click_signinbutton(self):
 #         self.driver.find_element_by_name(self.signinbutton_by_name).click()
-
 
 
 # # # --------------------------------------------step 8--------------------------------------------------------------

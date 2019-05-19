@@ -34,7 +34,8 @@
 # from testdata.data import *
 #
 #
-# @pytest.fixture(scope="class")  # @pytest.fixture(scope='session')
+# # @pytest.fixture(scope="class")
+# @pytest.fixture(scope='session')
 # def test_launchbrowser(self):
 #     global driver
 #     driver = webdriver.Chrome(Executable_Path)

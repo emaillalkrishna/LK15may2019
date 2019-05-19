@@ -18,7 +18,6 @@
 # # # Create one python files under the directory " testdata "
 # # # File name 1: data
 
-
 # Executable_Path = "C:/Users/LAL KRISHNA/PycharmProjects/15may2019/drivers/chromedriver.exe"
 # URL = "http://localhost:8080/login?from=%2F"
 # UN = "admin"

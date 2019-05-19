@@ -84,16 +84,12 @@
 #    driver.find_element_by_name("j_username").send_keys("admin")
 #    driver.find_element_by_name("j_password").send_keys("manager")
 #    driver.find_element_by_name("Submit").click()
+#    time.sleep(5)
 #
 #
 # def test_logout():
-#    time.sleep(5)
-#    driver.find_element_by_xpath("//*[text()='log out']").click()
-#
-#
-# test_launch_browser()
-# test_login()
-# test_logout()
+#     driver.find_element_by_xpath("//*[text()='log out']").click()
+
 
 # # # --------------------------------------Step 4-------------------------------------
 # # # Install pytest in to the project
@@ -124,11 +120,11 @@
 #    driver.find_element_by_name("j_username").send_keys("admin")
 #    driver.find_element_by_name("j_password").send_keys("manager")
 #    driver.find_element_by_name("Submit").click()
+#    time.sleep(5)
 #
 #
 # def test_logout(test_launchbrowser):
-#    time.sleep(5)
-#    driver.find_element_by_xpath("//*[text()='log out']").click()
+#     driver.find_element_by_xpath("//*[text()='log out']").click()
 
 
 # # # --------------------------------------Step 5-------------------------------------
@@ -146,17 +142,49 @@
 # # # Under the functions 1. test_login(test_launchbrowser) create objects using the class LoginPage and call the methods of the class LoginPage using the objects created
 # # # Under the functions 2. test_Logout(test_launchbrowser) create objects using the class HomePage and call the methods of the class HomePage using the objects created
 
+
 # # # Execution : Should run the file in Terminal and use the “python -m pytest -v"
 
+# # # Case 1 : @pytest.fixture(scope="session") In this case test_launchbrowser() will be launched once before the methods 1.test_login(test_launchbrowser) 2. test_login(test_launchbrowser)
+# # # Case 2 : @pytest.fixture(scope="function") In this case test_launchbrowser() will be launched once before the method 1.test_login(test_launchbrowser) and once before the method 2. test_login(test_launchbrowser)
 
+
+# # # Case 1
 # from selenium import webdriver
 # import pytest
-#
 # from pages.home import HomePage
 # from pages.login import LoginPage
 #
 #
 # @pytest.fixture(scope="session")
+# def test_launchbrowser():
+#     global driver
+#     driver = webdriver.Chrome(executable_path="C:/Users/LAL KRISHNA/PycharmProjects/15may2019/drivers/chromedriver.exe")
+#     driver.get("http://localhost:8080/login?from=%2F")
+#     driver.maximize_window()
+#     driver.implicitly_wait(30)
+#
+#
+# def test_login(test_launchbrowser):
+#     lp = LoginPage(driver)
+#     lp.enter_username()
+#     lp.enter_password()
+#     lp.click_signinbutton()
+#
+#
+# def test_Logout(test_launchbrowser):
+#     hp = HomePage(driver)
+#     hp.click_on_logout()
+
+
+# # # Case 2
+# from selenium import webdriver
+# import pytest
+# from pages.home import HomePage
+# from pages.login import LoginPage
+#
+#
+# @pytest.fixture(scope="function")
 # def test_launchbrowser():
 #     global driver
 #     driver = webdriver.Chrome(executable_path="C:/Users/LAL KRISHNA/PycharmProjects/15may2019/drivers/chromedriver.exe")
@@ -190,12 +218,11 @@
 
 
 # from selenium import webdriver
-#
 # import pytest
-#
 # from pages.login import LoginPage
 # from pages.home import HomePage
 # from testdata.data import *
+#
 #
 # @pytest.fixture(scope="session")
 # def test_launchbrowser():
@@ -219,11 +246,16 @@
 
 
 # # #  --------------------------------------Step 7-------------------------------------
-# # # Provide the function "test_launch_browser()" in side a class names as "JenkinLogin"
-# # # So function "test_launch_browser()" becomes a method inside the class "JenkinLogin"
+# # # Provide the function "test_launch_browser()" in side a class names as "TestJenkinLogin"
+
+# # We Should managerially add a suffix as "Test" to the class name
+
+# # # So function "test_launch_browser()" becomes a method inside the class "TestJenkinLogin"
 # # # Change the code @pytest.fixture(scope="session") to @pytest.fixture(scope="class") which was provided above the Method Number 1 : test_launch_browser()
 # # # Then the Method Number 1 will be as shown below :
-# # #                                                       class JenkinLogin:
+
+
+# # #                                                       class TestJenkinLogin:
 # # #                                                           @pytest.fixture(scope="class")
 # # #                                                           def test_launchbrowser(self):
 
@@ -233,9 +265,7 @@
 # # # Then the Method Number 3 will be as shown below :
 # # #                                                           def test_Logout(self, test_launchbrowser):
 
-
 # # #  Execution : Should run the file in Terminal and use the “python -m pytest -v"
-
 
 
 # from selenium import webdriver
@@ -243,8 +273,8 @@
 # from pages.login import LoginPage
 # from pages.home import HomePage
 # from testdata.data import *
-#
-# class JenkinLogin:
+
+# class TestJenkinLogin:
 #     @pytest.fixture(scope="class")
 #     def test_launchbrowser(self):
 #         global driver
@@ -277,7 +307,8 @@
 # from pages.home import HomePage
 # from testdata.data import *
 #
-# class JenkinLogin:
+#
+# class TestJenkinLogin:
 #     @pytest.fixture(scope="class")
 #     def test_launchbrowser(self):
 #         global driver
@@ -286,6 +317,7 @@
 #         driver.maximize_window()
 #         driver.implicitly_wait(30)
 #         yield
+#         driver.quit()
 #
 #
 #     def test_login(self, test_launchbrowser):
@@ -311,7 +343,7 @@
 # from pages.home import HomePage
 # from testdata.data import *
 #
-# class JenkinLogin:
+# class TestJenkinLogin:
 #     @pytest.fixture(scope="class")
 #     def test_launchbrowser(self):
 #         global driver
@@ -348,8 +380,9 @@
 # from pages.login import LoginPage
 # from pages.home import HomePage
 #
+#
 # @pytest.mark.usefixtures("test_launchbrowser")
-# class JenkinLogin:
+# class TestJenkinLogin:
 #
 #     def test_login(self):
 #         driver = self.driver
@@ -357,7 +390,6 @@
 #         lp.enter_username()
 #         lp.enter_password()
 #         lp.click_signinbutton()
-#
 #
 #     def test_Logout(self):
 #         driver = self.driver

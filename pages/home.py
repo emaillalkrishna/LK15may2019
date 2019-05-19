@@ -31,15 +31,14 @@
 # # # Then we have to create a constructor for the class where we will keep the static values used for the locators
 # # #  1. self.logout = "//*[text()='log out']"
 
-
-# class HomePage:
-#    def __init__(self, driver):
-#        self.driver = driver
-#        self.logout = "//*[text()='log out']"
 #
-#    def click_on_logout(self):
-#        self.driver.find_element_by_xpath(self.logout).click()
-
+# class HomePage:
+#     def __init__(self, driver):
+#         self.driver = driver
+#         self.logout = "//*[text()='log out']"
+#
+#     def click_on_logout(self):
+#         self.driver.find_element_by_xpath(self.logout).click()
 
 # # # --------------------------------------------step 6--------------------------------------------------------------
 # # # In this step there no change in the code
