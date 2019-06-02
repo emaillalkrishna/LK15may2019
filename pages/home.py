@@ -96,3 +96,61 @@
 #
 #    def click_on_logout(self):
 #        self.driver.find_element_by_xpath(self.logout).click()
+
+
+# # # --------------------------------------------step 11--------------------------------------------------------------
+# # # In this step there is no change in the code
+
+# class HomePage:
+#    def __init__(self, driver):
+#        self.driver = driver
+#        self.logout = "//*[text()='log out']"
+#
+#    def click_on_logout(self):
+#        self.driver.find_element_by_xpath(self.logout).click()
+
+
+# # # --------------------------------------------step 12--------------------------------------------------------------
+# # # In this step there is no change in the code
+
+
+# # # --------------------------------------------Level 2 -- step 13---------------------------------------------------
+# # # In this step  we have to use the inheritance
+# # # We are passing the WebGeneric inside the HomePage
+# # # And create a web element named as "wb" and keep that as global
+#
+# from pages.WebGeneric import *
+# class HomePage(WebGeneric):
+#    def __init__(self, driver):
+#        # self.driver = driver
+#        WebGeneric.__init__(self, driver)
+#
+#        self.logout = "//*[text()='log out']"
+#
+#        global wb
+#        wb = WebGeneric(driver)
+#
+#    def click_on_logout(self):
+#        # self.driver.find_element_by_xpath(self.logout).click()
+#        wb.click(self.logout)
+
+
+# # # --------------------------------------------Level 2 -- step 14---------------------------------------------------
+
+
+from pages.WebGeneric import *
+
+
+class HomePage(WebGeneric):
+    def __init__(self, driver):
+        # self.driver = driver
+        WebGeneric.__init__(self, driver)
+
+        self.logout = "//*[text()='log out']"
+
+        global wb
+        wb = WebGeneric(driver)
+
+    def click_on_logout(self):
+        # self.driver.find_element_by_xpath(self.logout).click()
+        wb.click("xpath", self.logout)

@@ -9,7 +9,7 @@
 # import time
 # from selenium import webdriver
 #
-# driver =webdriver.Chrome(executable_path="C:/Users/LAL KRISHNA/PycharmProjects/15may2019/drivers/chromedriver.exe")
+# driver = webdriver.Chrome(executable_path="C:/Users/LAL KRISHNA/PycharmProjects/15may2019/drivers/chromedriver.exe")
 # driver.get("http://localhost:8080/login?from=%2F")
 # driver.maximize_window()
 # driver.implicitly_wait(30)
@@ -30,7 +30,7 @@
 # # # Should call all the functions at the end
 # # # Execution By : Should Run the file directly
 
-# import time
+import time
 # from selenium import webdriver
 #
 #
@@ -40,6 +40,7 @@
 #     driver.get("http://localhost:8080/login?from=%2F")
 #     driver.maximize_window()
 #     driver.implicitly_wait(30)
+#
 #
 #
 # def login():
@@ -395,3 +396,84 @@
 #         driver = self.driver
 #         hp = HomePage(driver)
 #         hp.click_on_logout()
+
+# # # --------------------------------------Step 11-------------------------------------
+# # # Install "allure-pytest"
+# # # Download allurepytest.bat file in your local machin and set the environment variable for that.
+# # # Allure  is a third party reporting tool.
+# # # Creata reports folder (We have done this in step 9)
+# # # to generate allure reports execute below commads
+# # # python -m pytest --alluredir=reports
+# # # Then After this we will get a xml file in the reports directory
+
+# import pytest
+# from pages.login import LoginPage
+# from pages.home import HomePage
+#
+#
+# @pytest.mark.usefixtures("test_launchbrowser")
+# class TestJenkinLogin:
+#
+#     def test_login(self):
+#         driver = self.driver
+#         lp = LoginPage(driver)
+#         lp.enter_username()
+#         lp.enter_password()
+#         lp.click_signinbutton()
+#
+#     def test_Logout(self):
+#         driver = self.driver
+#         hp = HomePage(driver)
+#         hp.click_on_logout()
+
+# # # --------------------------------------Step 12-------------------------------------
+# # # once the execution is done to see the html reports execute the below commands
+# # # "allureserve reports"
+# # # Then After this we will get a html file  will be open in the browser and explicitly we have to save it.
+
+
+# # # # ---------------------------------- Level 2 - Step 13-----------------------------------------------------
+# # # No change in the code in this section
+
+# import pytest
+# from pages.login import LoginPage
+# from pages.home import HomePage
+#
+#
+# @pytest.mark.usefixtures("test_launchbrowser")
+# class TestJenkinLogin:
+#
+#     def test_login(self):
+#         driver = self.driver
+#         lp = LoginPage(driver)
+#         lp.enter_username()
+#         lp.enter_password()
+#         lp.click_signinbutton()
+#
+#     def test_Logout(self):
+#         driver = self.driver
+#         hp = HomePage(driver)
+#         hp.click_on_logout()
+
+
+# # # ---------------------------------- Level 2 - Step 14-----------------------------------------------------
+# # # No change in the code in this section
+import pytest
+from pages.login import LoginPage
+from pages.home import HomePage
+
+
+@pytest.mark.usefixtures("test_launchbrowser")
+class TestJenkinLogin:
+
+    def test_login(self):
+        driver = self.driver
+        lp = LoginPage(driver)
+        lp.enter_username()
+        lp.enter_password()
+        lp.click_signinbutton()
+
+    def test_Logout(self):
+        driver = self.driver
+        hp = HomePage(driver)
+        hp.click_on_logout()

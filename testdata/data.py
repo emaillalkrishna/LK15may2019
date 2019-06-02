@@ -56,3 +56,31 @@
 # URL = "http://localhost:8080/login?from=%2F"
 # UN = "admin"
 # PW = "manager"
+
+
+# # # --------------------------------------------step 11--------------------------------------------------------------
+# # # In this step there is no change in the code
+
+# Executable_Path = "C:/Users/LAL KRISHNA/PycharmProjects/15may2019/drivers/chromedriver.exe"
+# URL = "http://localhost:8080/login?from=%2F"
+# UN = "admin"
+# PW = "manager"
+
+# # # --------------------------------------------- step 12--------------------------------------------------------------
+# # # In this step there is no change in the code
+
+
+
+# # # # --------------------------------------------Level 2 -- step 13---------------------------------------------------
+#
+# Executable_Path = "C:/Users/LAL KRISHNA/PycharmProjects/15may2019/drivers/chromedriver.exe"
+# URL = "http://localhost:8080/login?from=%2F"
+# UN = "admin"
+# PW = "manager"
+
+# # # --------------------------------------------Level 2 -- step 14---------------------------------------------------
+
+Executable_Path = "C:/Users/LAL KRISHNA/PycharmProjects/15may2019/drivers/chromedriver.exe"
+URL = "http://localhost:8080/login?from=%2F"
+UN = "admin"
+PW = "manager"

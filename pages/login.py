@@ -175,3 +175,94 @@
 #
 #     def click_signinbutton(self):
 #         self.driver.find_element_by_name(self.signinbutton_by_name).click()
+
+# # # --------------------------------------------step 11--------------------------------------------------------------
+# # # In this step there is no change in the code
+
+# from testdata.data import *
+#
+# class LoginPage:
+#     def __init__(self, driver):
+#         self.driver = driver
+#
+#         self.un_by_name = "j_username"
+#         self.pw_by_name = "j_password"
+#         self.signinbutton_by_name = "Submit"
+#
+#     def enter_username(self):
+#         self.driver.find_element_by_name(self.un_by_name).send_keys(UN)
+#
+#     def enter_password(self):
+#         self.driver.find_element_by_name(self.pw_by_name).send_keys(PW)
+#
+#     def click_signinbutton(self):
+#         self.driver.find_element_by_name(self.signinbutton_by_name).click()
+
+
+# # # --------------------------------------------step 12--------------------------------------------------------------
+# # # In this step there is no change in the code
+
+
+# # # # --------------------------------------------Level 2 -- step 13---------------------------------------------------
+# # # # In this step  we have to use the inheritance
+# # # # We are passing the WebGeneric inside the LoginPage
+# # # # And create a web element named as "wb" and keep that as global
+#
+# from testdata.data import *
+# from pages.WebGeneric import *
+#
+#
+# class LoginPage(WebGeneric):
+#     def __init__(self, driver):
+#         # self.driver = driver
+#         WebGeneric.__init__(self, driver)
+#
+#         self.un_by_name = "j_username"
+#         self.pw_by_name = "j_password"
+#         self.signinbutton_by_name = "Submit"
+#
+#         global wb
+#         wb = WebGeneric(driver)
+#
+#     def enter_username(self):
+#         # self.driver.find_element_by_name(self.un_by_name).send_keys(UN)
+#         wb.enter_val(self.un_by_name, UN)
+#
+#     def enter_password(self):
+#         # self.driver.find_element_by_name(self.pw_by_name).send_keys(PW)
+#         wb.enter_val(self.pw_by_name, PW)
+#
+#     def click_signinbutton(self):
+#         # self.driver.find_element_by_name(self.signinbutton_by_name).click()
+#         wb.click(self.signinbutton_by_name)
+
+
+# # # --------------------------------------------Level 2 -- step 14---------------------------------------------------
+
+from testdata.data import *
+from pages.WebGeneric import *
+
+
+class LoginPage(WebGeneric):
+    def __init__(self, driver):
+        # self.driver = driver
+        WebGeneric.__init__(self, driver)
+
+        self.un_by_name = "j_username"
+        self.pw_by_name = "j_password"
+        self.signinbutton_by_name = "Submit"
+
+        global wb
+        wb = WebGeneric(driver)
+
+    def enter_username(self):
+        # self.driver.find_element_by_name(self.un_by_name).send_keys(UN)
+        wb.enter_val("name", self.un_by_name, UN)
+
+    def enter_password(self):
+        # self.driver.find_element_by_name(self.pw_by_name).send_keys(PW)
+        wb.enter_val("name", self.pw_by_name, PW)
+
+    def click_signinbutton(self):
+        # self.driver.find_element_by_name(self.signinbutton_by_name).click()
+        wb.click("name", self.signinbutton_by_name)
