@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e71b9600-f357-4f61-a18e-035e60aa4d5f" name="Default Changelist" comment="" />
+    <list default="true" id="e71b9600-f357-4f61-a18e-035e60aa4d5f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/tests/test_myfile1_jenkins.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="7667">
-              <caret line="451" column="1" lean-forward="true" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
+              <caret line="451" column="1" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -32,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/pages/login.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4199">
-              <caret line="248" column="41" lean-forward="true" selection-start-line="241" selection-end-line="248" selection-end-column="41" />
+              <caret line="248" column="41" selection-start-line="241" selection-end-line="248" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -46,20 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testdata/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="80" column="68" selection-start-line="80" selection-start-column="68" selection-end-line="80" selection-end-column="68" />
+            <state relative-caret-position="53">
+              <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/WebGeneric.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+            <state relative-caret-position="257">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -68,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/pages/LocGeneric.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -254,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559457474602</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated in 02 june 2019">
+      <created>1559467318881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559467318881</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -314,14 +323,14 @@
     <entry file="file://$PROJECT_DIR$/tests/test_myfile1_jenkins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7667">
-          <caret line="451" column="1" lean-forward="true" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
+          <caret line="451" column="1" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4199">
-          <caret line="248" column="41" lean-forward="true" selection-start-line="241" selection-end-line="248" selection-end-column="41" />
+          <caret line="248" column="41" selection-start-line="241" selection-end-line="248" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -332,24 +341,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="68" selection-start-line="80" selection-start-column="68" selection-end-line="80" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/LocGeneric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/WebGeneric.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+        <state relative-caret-position="257">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="45" />
         </state>
       </provider>
     </entry>
