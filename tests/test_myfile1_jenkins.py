@@ -1,9 +1,10 @@
 # # # --------------------------------------Step 1-------------------------------------
-# # # Directory Number 1 : Create a directory named as "drivers"
-# # # Copy and paste the driver.exe file inside this directory
-# # # Directory Number 2 : Create a directory named as "tests"
-# # # Create a python files  named as "myfile1_jenkins" under the directory " tests "
-# # # Should call all the functions at the end
+# # # Directory Number 1 :  Create a directory named as "drivers"
+# # #                       Copy and paste the driver.exe file inside this directory
+# # # Directory Number 2 :  Create a directory named as "tests"
+# # #                       Create a python files  named as "myfile1_jenkins" under the directory " tests "
+
+# # # We should Install selenium in the project
 # # # Execution By : Should Run the file directly
 
 # import time
@@ -24,9 +25,13 @@
 # # # --------------------------------------Step 2-------------------------------------
 # # # Keep different functionalities under different functions
 # # # As we have 3 different functionalities to perform we have 3 different functions
-# # # Function Number 1 : def launch_browser():
-# # # Function Number 2 : def login():
-# # # Function Number 3 : def logout():
+# # #       Function Number 1 : def launch_browser():
+# # #       Function Number 2 : def login():
+# # #       Function Number 3 : def logout():
+
+# # # When we do as mentioned above we should remember to keep the driver as global, add this line "global driver"
+# # # Remember, we should add this line before using the word "driver" in the code to make this as global
+# # # So use it righty below the line "def launch_browser():"
 # # # Should call all the functions at the end
 # # # Execution By : Should Run the file directly
 
@@ -59,15 +64,26 @@ import time
 # logout()
 
 # # # --------------------------------------Step 3-------------------------------------
-# # # Now Change the name of the file by adding a suffix "test_" to it.
-# # # So file name will be come : "test_myfile1_jenkins"
-# # # Similarly Change the name of the functions adding a suffix "test_" to it.
-# # # Function Number 1 : def test_launch_browser():
-# # # Function Number 2 : def test_login():
-# # # Function Number 3 : def test_logout():
-# # # Should call all the functions at the end
+# # # Now think in this way --> These different functions are the different test cases
+# # # In Normal testing we will be having 1000s of test cases
+# # # And it is a very difficult job to call those test cases(Which are in the form of function) at the end part.
+# # # As a solution for that we use pyTest
 
-# # # Execution By : Should Run the file directly
+
+# # # How to use it?
+# # #       Now Change the name of the file by adding a suffix "test_" to it.
+# # #               So file name will be come : "test_myfile1_jenkins"
+# # #       Similarly Change the name of the functions adding a suffix "test_" to it.
+# # #               Function Number 1 : def test_launch_browser():
+# # #               Function Number 2 : def test_login():
+# # #               Function Number 3 : def test_logout():
+
+
+# # # As we are adding PyTest to our project there is no need to call the functions at the end
+# # # But inExecution By : Should Run the file in the terminal
+# # # And for executing these test cases  in teh form of teh function we should use the command "python -m pytest -v"
+# # # While execution this will show "collected 3 items"
+
 
 # from selenium import webdriver
 # import time
@@ -93,15 +109,24 @@ import time
 
 
 # # # --------------------------------------Step 4-------------------------------------
-# # # Install pytest in to the project
+# # # In the Step 3 While execution the code will show a message like this "collected 3 items"
+# # # This means all those function with a suffix as "test_" is identified by the pytest as a test case.
+# # # but when we think more then we can understand that the launch browser is not a test case.
+# # # instead it is a pre condition for starting our testing
+
 # # # Add the code " @pytest.fixture(scope="session") " above the Function Number 1 : def test_launch_browser():
 # # # Provide the "test_launch_browser" inside the parenthesis of the other two functions
-# # # Function Number 1 :
-# # #                     @pytest.fixture(scope="session")
-# # #                     def test_launch_browser():
-# # # Function Number 2 : def test_login(test_launch_browser):
-# # # Function Number 3 : def test_logout(test_launch_browser):
-# # # In step 3 we mentioned : Should call all the functions at the end --> This Calling need to be removed for all 3 functions
+# # # thus the other two function understand that it as the parent condition
+
+# # # As we are using the "pytest" in the code so we have to import pytest module to the code.
+
+# # # There fore it will be as shown below
+
+# # #       Function Number 1 :
+# # #                               @pytest.fixture(scope="session")
+# # #                               def test_launch_browser():
+# # #       Function Number 2 : def test_login(test_launch_browser):
+# # #       Function Number 3 : def test_logout(test_launch_browser):
 
 # # # Execution : Should run the file in Terminal and use the “python -m pytest -v"
 
@@ -129,16 +154,18 @@ import time
 
 
 # # # --------------------------------------Step 5-------------------------------------
-# # # Directory Number 3 : Create a directory named as " pages "
-# # # Create two python files under the directory " pages "
-# # # File name 1: login
-# # # File name 2: home
+# # # Directory Number 3 :  Create a directory named as " pages "
+# # #                       Create two python files under the directory " pages "
+# # #                       File name 1: login
+# # #                       File name 2: home
 # # # Now go to the file login and home and perform code change in that pass as explained in that pages in Step 5
+
+
 
 # # # Here as we are receiving the inputs from the file named as "login"  and "home" to our file named as "test_myfile1_jenkins"
 # # # so we have to import file named as "data"  to this file "test_myfile1_jenkins"
-# # # File imported 1 : from pages.home import HomePage
-# # # File imported 2 : from pages.login import LoginPage
+# # #       File imported 1 : from pages.home import HomePage
+# # #       File imported 2 : from pages.login import LoginPage
 
 # # # Under the functions 1. test_login(test_launchbrowser) create objects using the class LoginPage and call the methods of the class LoginPage using the objects created
 # # # Under the functions 2. test_Logout(test_launchbrowser) create objects using the class HomePage and call the methods of the class HomePage using the objects created

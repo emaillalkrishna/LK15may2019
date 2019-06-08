@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e71b9600-f357-4f61-a18e-035e60aa4d5f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_myfile1_jenkins.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_myfile1_jenkins.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_myfile1_jenkins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7667">
-              <caret line="451" column="1" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
+            <state relative-caret-position="323">
+              <caret line="163" selection-start-line="163" selection-end-line="163" />
             </state>
           </provider>
         </entry>
@@ -48,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testdata/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="1343">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -103,11 +104,11 @@
         <option value="$PROJECT_DIR$/pages/LoginPage.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/testdata/data.py" />
-        <option value="$PROJECT_DIR$/tests/test_myfile1_jenkins.py" />
         <option value="$PROJECT_DIR$/pages/login.py" />
         <option value="$PROJECT_DIR$/pages/home.py" />
         <option value="$PROJECT_DIR$/pages/WebGeneric.py" />
         <option value="$PROJECT_DIR$/pages/LocGeneric.py" />
+        <option value="$PROJECT_DIR$/tests/test_myfile1_jenkins.py" />
       </list>
     </option>
   </component>
@@ -129,21 +130,6 @@
             <path>
               <item name="15may2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="15may2019" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="15may2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="15may2019" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="15may2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="15may2019" type="462c0819:PsiDirectoryNode" />
-              <item name="testdata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="15may2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="15may2019" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,13 +256,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559469888603</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated in 06 june 2019">
+      <created>1559803710769</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559803710770</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.098958336" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21056548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -286,7 +280,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32405892" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32405892" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.23731588" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.22585924" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -317,20 +311,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated in 19May2019" />
     <MESSAGE value="updated in 02 june 2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated in 02 june 2019" />
+    <MESSAGE value="updated in 06 june 2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated in 06 june 2019" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1683">
           <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_myfile1_jenkins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7667">
-          <caret line="451" column="1" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -348,6 +336,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/WebGeneric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -362,10 +357,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/data.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_myfile1_jenkins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="323">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
         </state>
       </provider>
     </entry>
